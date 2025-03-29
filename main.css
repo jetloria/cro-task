@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+}
+
+
+.main-Body{
+    background: black;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card-Container{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card-Main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 846px;
+    height: 100%;
+    max-height: 279px;
+    background: white;
+    border-radius: 10px;
+
+}
+
+.card-Content{
+    width: 100%;
+    max-width: 846px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-around;
+    
+}
+
+.card-Imgsection{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.wrench{
+    width: 140px;
+    max-width: 140px;
+    height: 172px;
+    max-height: 172.5px;
+    transform: rotate(-32.27deg);
+}
+
+.rating{
+    max-width: 158px;
+    max-height: 24px;
+}
+
+.item-Title{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.title-Container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-Infosection{
+    display: flex;
+    width: 100%;
+    max-width: 524px;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20px 20px 0 0;
+}
+
+.id-Number{
+    display: flex;
+    flex-direction: column;
+}
+
+.id-Container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.identifier-Num{
+    font-size: 14px;
+    color: gray;
+    
+}
+
+.last-Price{
+    font-size: 18px;
+    text-decoration: line-through;
+    color: #808080;
+}
+
+.newPrice{
+    font-size: 43px;
+    font-weight: 500;
+    color: #941B0C;
+}
+
+.id-Newprice{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-Buttons{
+    display: flex;
+    width: 100%;
+}
+
+.order{
+    width: 100%;
+    background: #F2F2F2;
+    border: none;
+    font-size: 18px;
+    padding: 15px;
+    font-weight: 500;
+    border-radius: 0 0 0 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.order:hover{
+    background: #83ff82;
+}
+
+.add-Cart{
+    width: 100%;
+    background: #F2F2F2;
+    border: none;
+    font-size: 18px;
+    padding: 15px;
+    font-weight: 500;
+    border-radius: 0 0 10px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.add-Cart:hover{
+    background: #83ff82;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .card-Main{
+        height: auto;
+        max-height: 100%;
+    }
+
+    .card-Content{
+        flex-direction: column;
+    }
+
+    .card-Infosection{
+        width: auto;
+        padding: 5px;
+    }
+
+    .newPrice{
+        font-size: 25px;
+    }
+  }
